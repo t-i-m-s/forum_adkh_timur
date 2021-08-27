@@ -1,0 +1,54 @@
+{% extends "template.html" %}
+{% load static %}
+
+{% block links %}
+    <link rel="stylesheet" href="{% static 'css/main_page.css' %}">
+{% endblock %}
+
+{% block body %}
+    {% if user.is_authenticated %}
+            <header>
+                <div class="profile">
+                    <div class="image">
+                        <img src="{{ avatar_url }}" alt="">
+                    </div>
+                    <div class="nickname">
+                        <h1><a href="users/profile/me/">{{ nickname }}</a></h1>
+                        <a href="users/logout/">Logout</a>
+                    </div>
+                </div>
+                <div class="search"></div>
+                <div class="notice"></div>
+            </header>
+            <main>
+                <div class="categories">
+                </div>
+                <div class="wall">
+                    <div class="search">Search by history</div>
+                    <div class="interest">
+                        <div class="glass">
+                        </div>
+                        <div class="description">
+                            <div class="main_inf">
+                                <div class="title">Самая первая статья (/-_-)/</div>
+                                <div class="author">Teeeems</div>
+                            </div>
+                            <div class="detail">
+                                <div class="text">Крче тут написано куча чего важного и тд)</div>
+                                <div class="rating">Ну такое</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="news">
+
+                </div>
+            </main>
+            <footer>
+                <p>EMPTY</p>
+            </footer>
+    {% else %}
+        <a href="users/registration/">Register</a>
+        <a href="users/login/">Login</a>
+    {% endif %}
+{% endblock %}

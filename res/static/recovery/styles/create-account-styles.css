@@ -1,0 +1,98 @@
+@import "./base.css";
+
+.background {
+    display: flex;
+    align-items: center;
+
+    flex-direction: column;
+
+    background-color: #6477CE;
+}
+
+
+.slogan {
+    font-family: 'Roboto', sans-serif;
+    font-size: 50px;
+
+    color: #ffffff;
+    opacity: 0.8;
+
+    margin-top: 30px;
+}
+
+.content-block {
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+
+    width: 400px;
+    height: 370px;
+
+    border-radius: 10px;
+
+    background-color: #ffffff;
+
+    margin-top: 50px;
+}
+
+.input-form {
+    margin: 27px 0 0 10px;
+
+}
+
+.input-form__element {
+    position: relative;
+    width: 300px;
+    height: 35px;
+
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    opacity: 0.43;
+
+    border: none;
+    border-radius: 4px;
+    box-shadow: 0 0 4px 0.1px #000000;
+
+    padding-left: 40px;
+}
+
+.input-form__logo {
+    position: absolute;
+    margin: 7px 5px 0 10px;
+}
+
+input[type="text"]:focus, input[type="password"]:focus {
+    border: 2px solid rgb(144, 163, 142);
+}
+
+.input-form__button {
+    width: 60px;
+    height: 35px;
+
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+
+    opacity: 0.43;
+
+    margin-left: 217px;
+
+    border: none;
+    border-radius: 4px;
+    box-shadow: 0 0 4px 0.1px #000000;
+    
+}
+
+.content-block__img {
+    
+    margin: -30px 0 0;
+    width: 140px;
+
+}
+
+.human {
+    width: 220px;
+
+    margin-top: -38px;
+    z-index: -1;
+}
